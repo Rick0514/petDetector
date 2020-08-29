@@ -10,7 +10,7 @@
 
 
 
-![](./pics/single_obj.jpg)
+![](https://github.com/Rick0514/petDetector/blob/master/pics/single_obj.JPG)
 
 
 
@@ -18,9 +18,9 @@
 
 ### 多目标
 
-![](./pics/multiple_obj.jpg)
+![](https://github.com/Rick0514/petDetector/blob/master/pics/multiple_obj.JPG)
 
-![](./pics/multiple_obj1.jpg)
+![](https://github.com/Rick0514/petDetector/blob/master/pics/multiple_obj1.JPG)
 
 
 
@@ -28,5 +28,5 @@
 
 
 
-![](./pics/web.jpg)
+![](https://github.com/Rick0514/petDetector/blob/master/pics/web.JPG)
 
