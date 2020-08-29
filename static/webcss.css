@@ -1,0 +1,34 @@
+label
+{
+	position: relative;
+}
+#fileinp
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+#btn
+{
+    margin-right: 5px;
+}
+
+.info1
+{
+	position:relative;
+    left:-100px;
+}
+
+.info2
+{
+  	position:relative;
+    left:-20px;
+}
+
+.img_obj
+{
+  	position:absolute;
+  	right:250px;
+  	top:30px;
+}

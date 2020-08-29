@@ -1,0 +1,59 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Myweb</title>
+	<link type="text/css" rel="stylesheet" href="{{url_for(endpoint='static', filename='webcss.css')}}">
+	<script type="text/javascript" src="{{url_for(endpoint='static', filename='fun.js')}}"></script>
+</head>
+<body>
+  	<form action="upload_image" method="POST" enctype="multipart/form-data">
+	<br><br><br><br>
+ 	<center><h2>Upload your image first !!</h2>
+	<div style="position: relative;">
+		<label for="fileinp" herf="webcss.css">
+		<input type="button" name="upload" id="btn" value="UPLOAD">
+		<input type="file" name="image" id="fileinp" onchange=showImg(this)>
+		<br>
+		<br>
+		</label>
+		<div style="text-align: top">
+			<span style="font-size: 15px;" class = "info1">Please upload your image：</span>
+			<img id="upload" src="./static/upload.jpg" style="width: 200px; height: 200px; vertical-align: middle;" class="info1" />
+          <input type="submit" class="info2" name="ok" value="ok">
+		</div>
+	</div>
+  	</center>
+  	</form>
+	<form action="pre1" method="POST" enctype="multipart/form-data">
+    <center>
+	
+    <br>
+    <div style="position: relative;">
+        <span>Choose features extractor:  </span><select name="features_extractor">
+        <option value="ResNet50">ResNet50</option>
+        <option value="Inception_V4">Inception_V4</option>
+		</select>
+      <br>
+      <br>
+      <span>Choose classifier:  </span><select name="classifier">
+      <option value="SVM">SVM</option>
+      <option value="KNN">KNN</option>
+      <option value="Guassian_Naive_Bayes">Guassian_Naive_Bayes</option>
+      </select><br><br> 
+		<input type="submit" value="Predict">
+      
+      <div>
+        <p>Result : {{pred}} </p> 
+ 
+      </div>
+      
+      </div></center>
+	</form>
+	<form action="return1" method="GET">
+      
+    	<input type="submit" name="back" value="back" class="button1">  
+     
+  	</form>
+    
+</body>
+</html>
